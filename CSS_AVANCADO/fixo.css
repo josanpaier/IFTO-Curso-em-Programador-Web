@@ -1,0 +1,29 @@
+#site {
+    margin: auto;
+    width: 960px;
+}
+
+#site header {
+    background-color: yellow;
+    height: 60px;    
+}
+
+#site nav {
+    width: 330px;
+    height: 400px;
+    background-color: red;
+    float: left;
+}
+
+#site section {
+    width: 630px;
+    height: 400px;
+    background-color: blue;
+    float: left;
+}
+
+#site footer {
+    height: 30px;
+    background-color: green;
+    clear: both;
+}

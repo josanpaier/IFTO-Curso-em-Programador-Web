@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando Elementos</title>
+    <style>
+        body {
+            height: 100%;
+            background-color: gainsboro;
+            padding: 50px;
+            margin: 0;
+        }
+        #quadro {
+            background-color: black;
+            margin: auto;
+            width: 300px;
+            padding: 10px 0;
+            position: relative;
+        }
+        #quadro>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #quadro>div:nth-child(2){
+            background-color: red;
+            position: relative;
+            /* top | bottom */
+            top: -20px;
+            /* left | right */
+            left: -10px;
+        }
+
+        #quadro>div:nth-child(3){
+            background-color: green;
+            position: fixed;
+            width: 100%;
+            /* top | bottom */
+            top: 0;
+            /* left | right */
+            left: 0;
+            margin: 0;
+            z-index: -1;
+            justify-content: left;
+        }
+
+        #quadro>div:nth-child(4){
+            background-color: blue;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            bottom: 10px;            
+            /* top | bottom */            
+            /* left | right */
+            right: 10px;
+            margin: 0;            
+        }
+    </style>
+</head>
+<body>
+    <div id="quadro">
+        <div>static</div>
+        <div>RELATIVE</div>
+        <div>FIXED</div>
+        <div>ABSOLUTE</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#site {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    min-width: 500px;
+}
+
+#site header {
+    background-color: yellow;
+    height: 60px;    
+}
+
+#site nav {
+    width: 40%;
+    height: 400px;
+    background-color: red;
+    float: left;
+}
+
+#site section {
+    width: 60%;
+    height: 400px;
+    background-color: blue;
+    float: left;
+}
+
+#site footer {
+    height: 30px;
+    background-color: green;
+    clear: both;
+}

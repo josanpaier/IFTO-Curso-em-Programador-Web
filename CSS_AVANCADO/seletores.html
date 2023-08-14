@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table tr {
+            border-bottom: 1px solid gray;
+        }
+        table tr td {
+            border-left: 1px solid gray;
+            padding: 5px;
+        }
+        table tr td[colspan = "5"] {
+            background-color: gray;
+            text-align: center;
+            color: gainsboro;
+        }
+        table tr:first-child, tr:last-child {
+            background-color: gray;
+        }
+        table tr:first-child td {
+            border-color: red;
+        }
+        /* table tr:nth-child(5) {
+            background-color: green;
+        } */
+        /* table tr:nth-child(3n) {
+            background-color: gainsboro;
+        } */
+        /* table tr:nth-child(2n+1) {
+            background-color: gainsboro;
+        } */
+
+        /* pares
+        table tr:nth-child(even) { 
+            background-color: gainsboro;
+        } */
+
+        /* ímpares
+        table tr:nth-child(odd) { 
+            background-color: gainsboro;
+        }*/
+
+        /*
+        + seleciona o seguinte
+        ^ seleciona todos após o 4º
+        */
+        table tr:nth-child(4)~tr{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>        
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>            
+            <td colspan="2">item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>        
+        <tr>
+            <td colspan="5">Intervalo</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+    </table>
+</body>
+</html>
