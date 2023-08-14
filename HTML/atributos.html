@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <form action="">
+        <input type="date" value="1983-09-19">
+        <hr>
+        <input type="color" value="#FF0000" disabled>
+        <hr>
+        <label>
+            <input type="checkbox" checked disabled> Aceito os termos do serviço.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox"> Aceito os termos do serviço.
+        </label>
+        <hr>
+        <input type="radio" name="sexo" id="m" checked>Maculino
+        <input type="radio" name="sexo" id="f">Feminino
+        <input type="radio" name="sexo" id="o">Outro
+        <input type="radio" name="sexo" id="n">Prefiro não informar
+        <hr>
+        <label for="">
+            Email:
+            <input type="email" name="" id="" placeholder="Digite seu email pessoal" size="60" maxlength="20" minlength="10"> <!--atributo required preenchimento obrigatório-->
+        </label>
+        <hr>
+        <label for="">
+            Number:
+            <input type="number" name="" id="" placeholder="Idade" min="0" max="100" step="5" autofocus>            
+        </label>
+        <hr>
+        <label for="">
+            Time:
+            <input type="time" name="" id="">            
+        </label>
+        <hr>
+        <label for="">
+            Range:
+            <input type="range" name="" id="">            
+        </label>
+        <hr>
+        <label for="">
+            File:
+            <input type="file" name="" id="">            
+        </label>
+        <hr>
+        <input type="submit" value="testar">
+    </form>
+</body>
+</html>
