@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #pai {
+            background-color: red;
+            border: 10px solid black;
+            height: 300px;
+            width: 90%;
+            /* margin: 10px 30px 20px; top | rigth | bottom | left */
+            margin: 30px auto;
+            padding: 20px; /*top | rigth | bottom | left*/
+        }
+        .filho {
+            background-color: purple;
+            border: 5px solid plum;
+            width: 80%;
+            height: 40%;            
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <div class="filho">
+        </div>
+        <div class="filho">
+        </div>
+    </div>
+    <div style="height: 300px; border: 5px solid magenta; background-color: blue;"></div>
+</body>
+</html>

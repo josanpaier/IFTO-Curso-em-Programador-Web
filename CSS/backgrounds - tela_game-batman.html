@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgrounds</title>
+    <style>
+        html, body {            
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            /* font-size: 20px; */
+        }
+        body {
+            background-color: black;
+            background-image: url('imagens/batman.webp');
+            /* background-size: auto auto; */
+            background-size: auto 35%;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            /* background-position: 500px 500px; */
+            /* background-attachment: fixed; */
+        }
+        /* Duas maneiras de estilizar em várias linhas acima com especificidades (-atributo) e em linha única abaixo */
+        .box1 {
+            background: yellow url('imagens/batman-logo.png') center / auto 150px no-repeat;
+            height: 200px;
+            width: 400px;            
+            margin: 50px auto;
+            /* border-radius: 10px 40px 60px 90px; */
+            border-radius: 50%;
+            box-shadow: 15px 0px 100px #FFF;
+            box-shadow: 15px 15px 100px white;
+            border: 5px solid #000;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: #FFFA;
+            margin: 50px;
+            border-color: #FFFF00;
+            border-style: outset;
+            border-width: 5px;
+        }
+        .box {
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 100px;
+            text-decoration: underline overline;
+            font-style: oblique;
+        }
+        .box:hover {
+            border-color: #FFF;
+            background-color: #FFFF00;
+            cursor: pointer;
+        }
+        /*.box2 {
+            border-color: #FFFF00;
+            border-style: outset;
+            border-width: 5px;
+        }
+        .box3 { 
+            border: #FF0000 dotted 10px;
+            box-shadow: 15px -15px 25px orange;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="box1">
+        
+    </div>
+    <div class="box box2">New Game</div>
+    <div class="box box3">Continue Game</div>
+    <div class="box box4">Configuration</div>
+</body>
+</html>
