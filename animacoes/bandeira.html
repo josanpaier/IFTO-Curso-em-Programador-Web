@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil</title>
+    <style>
+        .bandeira {
+            width: 250px;
+            height: 150px;
+            margin: 50px auto;
+        }
+        .bandeira.brasil {
+            background-color: green;
+            position: relative;
+        }
+        .bandeira>.losango {
+            width: 100%;
+            height: 100%;            
+            position: absolute;
+        }
+        .brasil>.losango::before, .brasil>.losango::after {
+            content: '';            
+            position: absolute;
+            border-left: 105px solid transparent;
+            border-right: 105px solid transparent;
+            left: 20px;
+        }
+        .brasil>.losango::before {
+            border-bottom: 65px solid #ffe11f;
+            top: 10px;
+        }
+        .brasil>.losango::after {            
+            border-top: 65px solid #ffe11f;            
+            bottom: 10px;
+        }
+        .brasil>.losango>.circulo {
+            width: 80px;
+            height: 80px;
+            background-color: #1651b8;
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+            border-radius: 50%;
+            z-index: 2;
+            overflow: hidden;
+        }
+        .brasil>.losango>.circulo::before, .brasil>.losango>.circulo::after {
+            content: '';
+            top: 50%;
+            left: 50%;
+            width: 90px;
+            height: 40px;
+            position: absolute;            
+            border-radius: 50%;
+            rotate: 14deg;
+        }
+        .brasil>.losango>.circulo::before {
+            background-color: white;
+            margin-left: -45px;
+            margin-top: -20px;
+        }
+        .brasil>.losango>.circulo::after {            
+            background-color: #1651b8;
+            margin-left: -48px;
+            margin-top: -10px;            
+        }
+        #estrela {
+            margin: 100px;
+            position: absolute;
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid #000;
+            border-left: 100px solid transparent;
+            transform: rotate(35deg);
+        }
+        #estrela:before {
+            border-bottom: 80px solid #000;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -45px;
+            left: -65px;
+            display: block;
+            content: '';
+            transform: rotate(-35deg);
+        }
+        #estrela:after {
+            position: absolute;
+            display: block;
+            top: 3px;
+            left: -105px;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid #000;
+            border-left: 100px solid transparent;
+            transform: rotate(-70deg);
+            content: '';            
+        }
+    </style>
+</head>
+<body>
+    <div class="bandeira brasil">
+        <div class="losango">
+            <div class="circulo"></div>
+        </div>
+    </div>
+    <div id="estrela"></div>
+</body>
+</html>
